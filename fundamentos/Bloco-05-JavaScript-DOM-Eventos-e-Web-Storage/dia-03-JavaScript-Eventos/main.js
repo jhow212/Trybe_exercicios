@@ -3,6 +3,13 @@ const secondLi = document.getElementById('second-li');
 const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
+
+function adicionandoTech () {
+    let elemento = document.querySelector('.container')
+    elemento.addEventListener('click', tech)
+
+}
+console.log(adicionandoTech('click', 'tech'))
 // 1. Copie esse arquivo e edite apenas ele;
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
