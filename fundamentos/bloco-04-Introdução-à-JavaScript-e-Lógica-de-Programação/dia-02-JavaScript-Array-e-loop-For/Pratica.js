@@ -42,7 +42,7 @@ let impar = [];
 for (let numero = 0; numero < numbers.length; numero +=1) {
     numeros = numbers[numero];
 
-  if (numeros % 2 === 1) {
+  if (numeros % 2 !== 0) {
     impar.push(numeros);
   }
 }
@@ -54,7 +54,7 @@ console.log(impar);
 let resultados = 0;
 let menorNumero = numbers[0];
 
-for(let menor = 0; menor < numbers.length; menor +=1) {
+for(let menor = 1; menor < numbers.length; menor +=1) {
    resultados = numbers[menor];
 
   if (resultados < menorNumero) {
@@ -62,3 +62,20 @@ for(let menor = 0; menor < numbers.length; menor +=1) {
   }
 }
 console.log(menorNumero);
+
+
+
+let array = [];
+
+for (let novos = 0; novos <= 25; novos +=1) {
+      array.push(novos)
+}
+console.log(array);
+
+
+let divisoes = [];
+
+for (let divididos = 0; divididos < array.length; divididos +=1) {
+  divisoes.push(array[divididos] / 2);
+}
+console.log(divisoes);
