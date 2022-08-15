@@ -1,5 +1,5 @@
 export default class Animal {
-  constructor(public name: string, private birthDate: Date) {}
+  constructor(protected birthDate: Date) {}
 
   get age(): number {
     const timeDiff = Math.abs(Date.now() - new Date(this.birthDate).getTime());
