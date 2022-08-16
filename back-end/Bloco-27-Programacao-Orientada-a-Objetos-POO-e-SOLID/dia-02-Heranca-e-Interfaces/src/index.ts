@@ -1,6 +1,7 @@
 import Animal from "./classe.animal";
 import Bird from "./classe.bird";
 import Mammal from "./classe.mammal";
+import MyClass from "./classe.my.class";
 import Subclass from "./classe.subClass";
 import Superclass from "./classe.superClass";
 
@@ -27,3 +28,8 @@ const sub = new Subclass();
 
 myFunc(sup);
 myFunc(sub);
+
+const myObject = new MyClass(2);
+
+console.log(myObject.myNumber);
+console.log(myObject.myFunc(4));
