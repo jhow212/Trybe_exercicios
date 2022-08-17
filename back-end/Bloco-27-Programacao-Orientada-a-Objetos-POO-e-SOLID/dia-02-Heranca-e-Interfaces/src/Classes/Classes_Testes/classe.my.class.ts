@@ -1,4 +1,4 @@
-import { Myinterface } from "./interfaces/my.interface";
+import { Myinterface } from "../../interfaces/my.interface";
 
 export default class MyClass implements Myinterface {
   constructor(public myNumber: number) {}
