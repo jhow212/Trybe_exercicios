@@ -1,15 +1,16 @@
 import Person from "./Classes/classe.person";
 import Student from "./Classes/classe.student";
+import Subject from "./Classes/classe.subject";
 import { Employee } from "./Interfaces/interfaces";
 
-// //Para testar o Student!
+// //Para testar a class antes das mudanças Student!
 // const personOne = new Student("202001011", "Maria da Silva");
 // console.log(personOne);
 
 // const personTwo = new Student("202001012", "João da Silva");
 // console.log(personTwo);
 
-// //Para testar o Student!
+// //Para testar a class antes das mudanças Student!
 // personOne.examsGrades = [25, 20, 23, 23];
 // personOne.worksGrades = [45, 45];
 // console.log("Soma de todas as notas da personOne: ", personOne.sumGrades());
@@ -26,7 +27,7 @@ import { Employee } from "./Interfaces/interfaces";
 //   personTwo.sumAvarageGrade()
 // );
 
-//Para testar o Person!
+//Para testar a class Person!
 const maria = new Person("Maria da Consolação", new Date("1980/01/25"));
 console.log(maria);
 
@@ -38,7 +39,7 @@ console.log(luiza);
 // deve retornar erro
 // const invalidPersonAge = new Person('Ana Vitória', new Date('1900/06/07'));
 
-//Para testar o Student extends Person!
+//Para testar a class Student extends Person!
 const carolina = new Student("Carolina da Silva", new Date("2005/03/17"));
 const lucas = new Student("Lucas Peixoto Salgueiro", new Date("2006/07/19"));
 const jessica = new Student("Jéssica Bianca Nunes", new Date("2004/06/06"));
@@ -76,3 +77,15 @@ const testInterfaceEmployee: Employee = {
 };
 
 console.log(testInterfaceEmployee);
+
+//Para testar a class Subject!
+const math = new Subject("Matemática");
+const story = new Subject("História");
+const philosophy = new Subject("Filosofia");
+
+console.log(math);
+console.log(story);
+console.log(philosophy);
+
+// deve retornar erro
+// const invalidSubjectName = new Subject('Po');
