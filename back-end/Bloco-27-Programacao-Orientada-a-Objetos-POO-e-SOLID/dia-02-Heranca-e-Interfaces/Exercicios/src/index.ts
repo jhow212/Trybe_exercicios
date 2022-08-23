@@ -1,29 +1,29 @@
 import Person from "./Classes/classe.person";
-// import Student from "./Classes/classe.student";
+import Student from "./Classes/classe.student";
 
-// //Para testar o Student!
-// const personOne = new Student("202001011", "Maria da Silva");
-// console.log(personOne);
+//Para testar o Student!
+const personOne = new Student("202001011", "Maria da Silva");
+console.log(personOne);
 
-// const personTwo = new Student("202001012", "João da Silva");
-// console.log(personTwo);
+const personTwo = new Student("202001012", "João da Silva");
+console.log(personTwo);
 
-// //Para testar o Student!
-// personOne.examsGrades = [25, 20, 23, 23];
-// personOne.worksGrades = [45, 45];
-// console.log("Soma de todas as notas da personOne: ", personOne.sumGrades());
-// console.log(
-//   "Média de todas as notas da personOne: ",
-//   personOne.sumAvarageGrade()
-// );
+//Para testar o Student!
+personOne.examsGrades = [25, 20, 23, 23];
+personOne.worksGrades = [45, 45];
+console.log("Soma de todas as notas da personOne: ", personOne.sumGrades());
+console.log(
+  "Média de todas as notas da personOne: ",
+  personOne.sumAvarageGrade()
+);
 
-// personTwo.examsGrades = [26, 21, 24, 24];
-// personTwo.worksGrades = [47, 47];
-// console.log("Soma de todas as notas da personTwo: ", personTwo.sumGrades());
-// console.log(
-//   "Média de todas as notas da personTwo: ",
-//   personTwo.sumAvarageGrade()
-// );
+personTwo.examsGrades = [26, 21, 24, 24];
+personTwo.worksGrades = [47, 47];
+console.log("Soma de todas as notas da personTwo: ", personTwo.sumGrades());
+console.log(
+  "Média de todas as notas da personTwo: ",
+  personTwo.sumAvarageGrade()
+);
 
 //Para testar o Person!
 const maria = new Person("Maria da Consolação", new Date("1980/01/25"));
