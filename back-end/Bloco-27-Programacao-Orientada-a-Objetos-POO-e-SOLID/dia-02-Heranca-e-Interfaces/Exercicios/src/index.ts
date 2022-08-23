@@ -1,5 +1,6 @@
 import Person from "./Classes/classe.person";
 import Student from "./Classes/classe.student";
+import { Employee } from "./Interfaces/interfaces";
 
 // //Para testar o Student!
 // const personOne = new Student("202001011", "Maria da Silva");
@@ -57,3 +58,21 @@ console.log(fernando);
 
 // deve retornar erro
 // fernando.worksGrades = [45, 45, 45];
+
+//Para testar uma Interface de Employee
+const testInterfaceEmployee: Employee = {
+  registration: "FNC1234567891011",
+  salary: 1200.0,
+  admissionDate: new Date(),
+
+  generateRegistration(): string {
+    const randomStr = String(Date.now() * (Math.random() + 1)).replace(
+      /\W/g,
+      ""
+    );
+
+    return `FNC${randomStr}`;
+  },
+};
+
+console.log(testInterfaceEmployee);
