@@ -1,6 +1,7 @@
 import Person from "./Classes/classe.person";
 import Student from "./Classes/classe.student";
 import Subject from "./Classes/classe.subject";
+import Teacher from "./Classes/classe.teacher";
 import { Employee } from "./Interfaces/interfaces";
 
 // //Para testar a class antes das mudanças Student!
@@ -89,3 +90,40 @@ console.log(philosophy);
 
 // deve retornar erro
 // const invalidSubjectName = new Subject('Po');
+
+//Para testar a class Teacher!
+const math2 = new Subject("Matemática");
+const history = new Subject("História");
+const philosophy2 = new Subject("Filosofia");
+
+const marta = new Teacher(
+  "Marta da Silva",
+  new Date("1980/03/30"),
+  2000,
+  math2
+);
+const joao = new Teacher(
+  "João Antônio da Costa",
+  new Date("1982/04/21"),
+  2000,
+  history
+);
+const lucio = new Teacher(
+  "Lucio Teixeira",
+  new Date("1986/01/29"),
+  2000,
+  philosophy2
+);
+
+console.log(marta);
+console.log(joao);
+console.log(lucio);
+
+// deve retornar erro
+//const invalidTeacherSalary = new Teacher('Marta da Silva', new Date('1980/03/30'), 2000, math2);
+
+// deve retornar erro
+// const today = new Date();
+// today.setDate(today.getDate() + 1)
+// const tomorrow = today;
+// marta.admissionDate = tomorrow;
