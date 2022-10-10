@@ -1,5 +1,5 @@
 use('aula_29_2');
 
-//$not = quero tudo q  não deito pelo autor escolhido
+//$not = quero tudo q não foi feito pelo autor escolhido
 
 db.filmes.find({ diretor: {$not: {$eq: 'Michael Bay' }} })
