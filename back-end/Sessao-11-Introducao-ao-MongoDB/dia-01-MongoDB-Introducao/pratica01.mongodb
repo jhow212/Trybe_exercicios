@@ -1,0 +1,17 @@
+use('sample')
+
+db.movies.findOne(
+  { title: 'Forrest Gump' },
+  { title: 1, imdb_rating: 1 }
+)
+
+//para ocutar o _id do retorno
+
+db.movies.findOne(
+  { title: 'Forrest Gump' },
+  { title: 1, imdb_rating: 1, _id: 0 }
+)
+
+//para returnar o numero de documentos de uma coleção
+
+db.movies.countDocuments()
