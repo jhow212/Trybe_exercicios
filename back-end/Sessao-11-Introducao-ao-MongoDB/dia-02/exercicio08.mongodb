@@ -1,0 +1,5 @@
+use('aula_29_2');
+
+//$ne = quero tudo q  não for igual a oq estou procurando
+
+db.filmes.find({ 'avaliacao.ruim': {$ne: 7} })

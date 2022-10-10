@@ -1,0 +1,5 @@
+use('aula_29_2');
+
+//$lt = quero tudo q for menor oq estou procurando
+
+db.filmes.find({ ano: { $lt: 2000 }})

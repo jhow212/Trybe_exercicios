@@ -1,0 +1,5 @@
+use('aula_29_2');
+
+//{ $or: [{'avaliacao.bom': {$gte: 8}}, {ano: {$gt: 2000}}] } = quero tudo q  que tiver a avaliacao.bom maior q 8 ou tudo q for inferior ao ano de 2000
+
+db.filmes.find({ $or: [{'avaliacao.bom': {$gte: 8}}, {ano: {$gt: 2000}}] })

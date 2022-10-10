@@ -1,0 +1,5 @@
+use('aula_29_2');
+
+//$eq= quero tudo q for igual a oq estou procurando
+
+db.filmes.find({ ano: {$eq: 1993} })

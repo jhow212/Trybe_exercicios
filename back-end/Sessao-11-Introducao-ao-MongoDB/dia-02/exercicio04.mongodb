@@ -1,0 +1,5 @@
+use('aula_29_2');
+
+//$gte = quero tudo q for maior ou igual ao oq estou procurando
+
+db.filmes.find({ ano: { $gte: 1993 }})

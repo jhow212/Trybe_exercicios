@@ -1,0 +1,11 @@
+use('aula_29_2');
+
+// { $nor: [
+//   {diretor: 'Michael Bay'},
+//   {'avaliacao.ruim': 10}
+//   ]} = quero tudo q  não for igual a oq estou procurando
+
+db.filmes.find({ $nor: [
+  {diretor: 'Michael Bay'},
+  {'avaliacao.ruim': 10}
+  ]})
