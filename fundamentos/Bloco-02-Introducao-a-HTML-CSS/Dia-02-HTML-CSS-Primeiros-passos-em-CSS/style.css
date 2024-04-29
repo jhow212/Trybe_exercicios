@@ -1,0 +1,13 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+}
+ul {
+  color: blueviolet;
+}
+.p-and-list-style {
+  color: purple;
+}
+body {
+  background-color: black;
+}
